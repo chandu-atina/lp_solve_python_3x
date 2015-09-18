@@ -1,6 +1,8 @@
 # lp_solve_python_3x
 lpsolve python extension for python 2.x and python 3.x. The lpsolve extension is ported to python3.x so that it works on both python2.x and python3.x. 
 
+This project is a rework on lpsolve python 5.5.2.0 from http://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.0/lp_solve_5.5.2.0_Python_source.tar.gz/download. The lpsolve avaialble in official site is not compatible with python3.x. 
+
 There are two options to use lpsolve on Python3.x
 # Quick Use
 1) Download tar ball "lpsolve55-5.5.0.9.linux-x86_64.tar.gz" under "lp_solve_python_3x/extra/Python/dist_python3.4/" which is built on ubuntu14.04 64-bit machine using Python 3.4.0
