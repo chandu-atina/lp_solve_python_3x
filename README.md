@@ -10,8 +10,10 @@ There are two options to use lpsolve on Python3.x
 # Build from sources
 1) Download lpsolve source code [lp_solve_5.5.2.0_source.tar.gz](http://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.0/lp_solve_5.5.2.0_source.tar.gz/download)
 
-2) Extract the archive and copy extra/Python folder into lp_solce_5.5
+2) Extract the archive and copy extra/Python folder into lp_solve_5.5
 
 3) cd lp_solve_5.5/extra/Python/
 
-4) Steps needs to be updated
+4) Use following command to install lpsolve extension into site-packages.
+    
+        $python setup.py install
