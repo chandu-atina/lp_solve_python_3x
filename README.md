@@ -14,8 +14,19 @@ There are two options to use lpsolve on Python3.x
 
 2) Extract the archive and copy extra/Python folder into lp_solve_5.5
 
+3) cd lp_solve_5.5/lpsolve55 and execute following command
+
+        $ sh ccc (on linux)
+        $ sh ccc.osx (on Mac)
+    Refer to readme.txt under same folder for more information (lp_solve_5.5/lpsolve55/).
+
 3) cd lp_solve_5.5/extra/Python/
 
-4) Use following command to install lpsolve extension into site-packages.
+4) change lpsolve55 path in extra/Pythpn/setup.py to point to appropriate directory.
+    
+        LPSOLVE55 = '../../lpsolve55/bin/ux64'  #change path to reflect appropriate path.
+> Note: In my case, I used linux 64 bit machine so folder 'bin/ux64/' created under lpsolve55 directory when executed "sh ccc" command from terminal. The folder contains the lpsolve library files. The LPSOLVE55 path in setup.py should point to the newly generated directory which contains the required lpsolve libraries(liblpsolve55.a).
+
+5) Use following command to install lpsolve extension into site-packages.
     
         $python setup.py install
