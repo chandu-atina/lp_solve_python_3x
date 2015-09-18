@@ -5,7 +5,7 @@ This project is a rework on lpsolve python 5.5.2.0 from http://sourceforge.net/p
 
 There are two options to use lpsolve on Python3.x
 # Quick Use
-1) Download tar ball "lpsolve55-5.5.0.9.linux-x86_64.tar.gz" under "lp_solve_python_3x/extra/Python/dist_python3.4/" which is built on ubuntu14.04 64-bit machine using Python 3.4.0
+1) Download tar ball ["lpsolve55-5.5.0.9.linux-x86_64.tar.gz"] (https://github.com/chandu-atina/lp_solve_python_3x/blob/master/extra/Python/dist_python3.4/lpsolve55-5.5.0.9.linux-x86_64.tar.gz) under lp_solve_python_3x/extra/Python/dist_python3.4/" which is built on ubuntu14.04 64-bit machine using Python 3.4.0
 
 2) Extract the files and copy the files under "site-packages/" to local python site-packages folder. 
 
