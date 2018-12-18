@@ -2,16 +2,15 @@ from distutils.core import setup, Extension
 from os import getenv
 import sys
 import os
+from distutils import sysconfig
+
 p = sys.prefix
 NUMPYPATH = '.'
 if os.path.isdir(p + '/include/numpy'):
   NUMPY = 'NUMPY'
-elif os.path.isdir(p + '/Lib/site-packages/numpy/core/include/numpy'):
+elif os.path.isdir(sysconfig.get_python_lib() + '/numpy/core/include/numpy'):
   NUMPY = 'NUMPY'
-  NUMPYPATH = p + '/Lib/site-packages/numpy/core/include'
-elif os.path.isdir(p + '/lib/python3.4/site-packages/numpy/core/include/numpy'):
-  NUMPY = 'NUMPY'
-  NUMPYPATH = p + '/lib/python3.4/site-packages/numpy/core/include'
+  NUMPYPATH = sysconfig.get_python_lib() + '/numpy/core/include'
 else:
   NUMPY = 'NONUMPY'
 print ('numpy: ' + NUMPY)
