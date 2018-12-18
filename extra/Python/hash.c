@@ -8,7 +8,6 @@
 
 #include <sys/types.h>
 #include <stdlib.h>
-#include <malloc.h>
 #include <string.h>
 
 #include "hash.h"
