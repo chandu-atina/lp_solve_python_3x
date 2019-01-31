@@ -14,7 +14,7 @@
 #include "numpy/arrayobject.h"
 #endif
 
-#include <lpsolve/lp_lib.h>
+#include "lp_lib.h"
 
 #define quotechar "'"
 #define drivername lpsolve
