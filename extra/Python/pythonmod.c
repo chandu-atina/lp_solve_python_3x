@@ -896,7 +896,7 @@ strArray GetCellCharItems(structlpsolvecaller *lpsolvecaller, int element, int l
                     ErrMsgTxt(lpsolvecaller, "invalid vector (non-string item).");
     		}
         #ifdef PY3K
-    		if ((PyBytes_AsStringAndSize(item, &ptr, &size1) != 0) ||
+    		if(!(ptr = PyUnicode_AsUTF8AndSize(item,&size1)) ||
 		#else
     		if ((PyString_AsStringAndSize(item, &ptr, &size1) != 0) ||
 		#endif
